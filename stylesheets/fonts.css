@@ -1,0 +1,8 @@
+@font-face {
+	font-family: "Cascadia Mono";
+	src: url("../fonts/CascadiaMono.ttf");
+}
+
+:root {
+	--md-code-font: "Cascadia Mono";
+}
