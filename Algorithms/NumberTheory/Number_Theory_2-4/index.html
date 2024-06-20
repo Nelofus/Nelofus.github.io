@@ -11,21 +11,25 @@
       
       
       
+        <link rel="prev" href="../Number_Theory_2-3/">
       
       
-      <link rel="icon" href="/images/favicon.png">
+        <link rel="next" href="../Number_Theory_2-5/">
+      
+      
+      <link rel="icon" href="../../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
       
-        <title>Heratino's spell codex</title>
+        <title>3.2.4 亚线性筛法初步 - Heratino's spell codex</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -85,16 +89,25 @@
       
     
     
-      <link rel="stylesheet" href="/stylesheets/fonts.css">
+      <link rel="stylesheet" href="../../../stylesheets/fonts.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -112,6 +125,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -124,7 +142,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="/." title="Heratino&#39;s spell codex" class="md-header__button md-logo" aria-label="Heratino's spell codex" data-md-component="logo">
+    <a href="../../.." title="Heratino&#39;s spell codex" class="md-header__button md-logo" aria-label="Heratino's spell codex" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -144,7 +162,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              3.2.4 亚线性筛法初步
             
           </span>
         </div>
@@ -245,7 +263,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -264,7 +282,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/Records/" class="md-tabs__link">
+        <a href="../../../Records/" class="md-tabs__link">
           
   
   Records
@@ -278,11 +296,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/Algorithms/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   Algorithms
@@ -321,7 +341,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Heratino&#39;s spell codex" class="md-nav__button md-logo" aria-label="Heratino's spell codex" data-md-component="logo">
+    <a href="../../.." title="Heratino&#39;s spell codex" class="md-nav__button md-logo" aria-label="Heratino's spell codex" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -351,7 +371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -409,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Records/" class="md-nav__link">
+      <a href="../../../Records/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -468,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Records/Misc/Duel/" class="md-nav__link">
+      <a href="../../../Records/Misc/Duel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -573,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Records/UniversalCup/Season03/3ndStage00/" class="md-nav__link">
+      <a href="../../../Records/UniversalCup/Season03/3ndStage00/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -594,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Records/UniversalCup/Season03/3ndStage01/" class="md-nav__link">
+      <a href="../../../Records/UniversalCup/Season03/3ndStage01/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -707,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Records/AtCoder/ABC/ABC341-360/" class="md-nav__link">
+      <a href="../../../Records/AtCoder/ABC/ABC341-360/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -728,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Records/AtCoder/ABC/ABC361-380/" class="md-nav__link">
+      <a href="../../../Records/AtCoder/ABC/ABC361-380/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -795,7 +815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Records/AtCoder/ARC/ARC121-140/" class="md-nav__link">
+      <a href="../../../Records/AtCoder/ARC/ARC121-140/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -816,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Records/AtCoder/ARC/ARC161-180/" class="md-nav__link">
+      <a href="../../../Records/AtCoder/ARC/ARC161-180/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -883,7 +903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Records/AtCoder/AGC/AGC001-020/" class="md-nav__link">
+      <a href="../../../Records/AtCoder/AGC/AGC001-020/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -924,23 +944,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -951,7 +976,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Algorithms
@@ -965,7 +990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Algorithms/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -983,6 +1008,8 @@
                 
   
   
+    
+  
   
   
     
@@ -992,11 +1019,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -1010,7 +1037,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Chapter 3. 数论
@@ -1021,6 +1048,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1030,11 +1059,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
@@ -1048,7 +1077,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2_1">
             <span class="md-nav__icon md-icon"></span>
             2. 数论求和
@@ -1062,7 +1091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Algorithms/NumberTheory/Introduction/" class="md-nav__link">
+      <a href="../Introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1083,7 +1112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Algorithms/NumberTheory/Number_Theory_2-1/" class="md-nav__link">
+      <a href="../Number_Theory_2-1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1104,7 +1133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Algorithms/NumberTheory/Number_Theory_2-2/" class="md-nav__link">
+      <a href="../Number_Theory_2-2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1125,7 +1154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Algorithms/NumberTheory/Number_Theory_2-3/" class="md-nav__link">
+      <a href="../Number_Theory_2-3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1143,10 +1172,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/Algorithms/NumberTheory/Number_Theory_2-4/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    3.2.4 亚线性筛法初步
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1155,6 +1204,86 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      杜教筛
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="杜教筛">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      块筛
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      杜教筛的两个形式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      狄利克雷双曲线法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pn" class="md-nav__link">
+    <span class="md-ellipsis">
+      PN 筛
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#min25" class="md-nav__link">
+    <span class="md-ellipsis">
+      Min25 筛
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1167,7 +1296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Algorithms/NumberTheory/Number_Theory_2-5/" class="md-nav__link">
+      <a href="../Number_Theory_2-5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1188,7 +1317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Algorithms/NumberTheory/Number_Theory_2-6/" class="md-nav__link">
+      <a href="../Number_Theory_2-6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1301,7 +1430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Algorithms/Optimization/NetworkFlow/NetworkFlow_1/" class="md-nav__link">
+      <a href="../../Optimization/NetworkFlow/NetworkFlow_1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1322,7 +1451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Algorithms/Optimization/NetworkFlow/NetworkFlow_2/" class="md-nav__link">
+      <a href="../../Optimization/NetworkFlow/NetworkFlow_2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1376,6 +1505,76 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      杜教筛
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="杜教筛">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      块筛
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      杜教筛的两个形式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      狄利克雷双曲线法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pn" class="md-nav__link">
+    <span class="md-ellipsis">
+      PN 筛
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#min25" class="md-nav__link">
+    <span class="md-ellipsis">
+      Min25 筛
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1387,8 +1586,100 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+    <a href="https://github.com/Nelofus/Nelofus.github.io/edit/main/docs/Algorithms/NumberTheory/Number_Theory_2-4.md" title="编辑此页" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/Nelofus/Nelofus.github.io/raw/main/docs/Algorithms/NumberTheory/Number_Theory_2-4.md" title="查看本页的源代码" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<h1 id="_1">亚线性筛法初步<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>我们在本节中约定，符号 <span class="arithmatex">\(\operatorname{S}_f(n)\)</span> 表示数论函数 <span class="arithmatex">\(f\)</span> 的前 <span class="arithmatex">\(n\)</span> 项和，即：</p>
+<div class="arithmatex">\[
+\sum_{i=1}^{n}f(i)
+\]</div>
+<p>整除分块为我们揭示了整个序列仅仅只有 <span class="arithmatex">\(\mathcal O(\sqrt n)\)</span> 个位置是非平凡的，那我们的前缀和为什么不能做到更好呢？</p>
+<h2 id="_2">杜教筛<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">块筛<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>整除分块里，我们经常见到这样的式子</p>
+<div class="arithmatex">\[
+\operatorname{S}_f(\lfloor\frac{n}{k}\rfloor)
+\]</div>
+<p>我们称 <span class="arithmatex">\(f\)</span> 关于 <span class="arithmatex">\(n\)</span> 的<strong>块筛</strong>是对于所有 <span class="arithmatex">\(k\)</span> 满足 <span class="arithmatex">\(1\le k\le n\)</span> 时，<span class="arithmatex">\(\operatorname{S}_f(\lfloor\frac{n}{k}\rfloor)\)</span> 的值组成的集合。也就是整除分块的时候我们要的值。</p>
+<p>整除的集合有着如下的性质：</p>
+<ul>
+<li>
+<p><strong>性质 1:</strong> 设 <span class="arithmatex">\(R(n)=\{\lfloor\frac{n}{k}\rfloor: 1\le k\le n\}\)</span>，那么若 <span class="arithmatex">\(m\in R(n)\)</span>，则 <span class="arithmatex">\(R(m)\subseteq R(n)\)</span>。</p>
+<p>这是因为 <span class="arithmatex">\(\lfloor\frac{\lfloor\frac{n}{i}\rfloor}{j}\rfloor=\lfloor\frac{n}{ij}\rfloor\)</span>。也就是，想要得到<span class="arithmatex">\(f\)</span> 关于 <span class="arithmatex">\(n\)</span> 的块筛，得到 <span class="arithmatex">\(kn\)</span> 的即可。</p>
+</li>
+<li>
+<p><strong>性质 2:</strong> 设 <span class="arithmatex">\(\{r: \lfloor\frac{n}{r}\rfloor\neq \lfloor\frac{n}{r+1}\rfloor\}\)</span>，那么该集合即为 <span class="arithmatex">\(\{\lfloor\frac{n}{k}\rfloor: 1\le k\le n\}\)</span>。</p>
+<p>也就是整除分块的边界恰好是 <span class="arithmatex">\(\{\lfloor\frac{n}{k}\rfloor:1\le k\le n\}\)</span>，使用性质 1 即可证明。</p>
+</li>
+</ul>
+<h3 id="_4">杜教筛的两个形式<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>乘积式：</strong></p>
+<p>有数论函数（不必是积性） <span class="arithmatex">\(f,g,h\)</span> 满足 <span class="arithmatex">\(h=f*g\)</span>，设我们已经知道了 <span class="arithmatex">\(f,g\)</span> 的块筛结果，现在要求 <span class="arithmatex">\(h\)</span> 的块筛结果。</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\operatorname{S}_h(n)&amp;=\sum_{i=1}^{n}\sum_{d\mid i}f(d)g(\frac{i}{d})\\
+&amp;=\sum_{d=1}^{n}f(d)\sum_{d\mid i,i\le n}^{}g(\frac{i}{d})\\
+&amp;=\sum_{d=1}^{n}f(d)\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}g(i)\\
+&amp;=\sum_{d=1}^{n}f(d)\operatorname{S}_g(\left\lfloor\frac{n}{d}\right\rfloor)
+\end{aligned}
+\]</div>
+<p>对每个 <span class="arithmatex">\(\lfloor\frac{n}{d}\rfloor\)</span> 求一次就是类似二重整除分块的形式了，即复杂度是 <span class="arithmatex">\(\mathcal O(n^{3/4})\)</span>。</p>
+<p>如果 <span class="arithmatex">\(f,g\)</span> 都是积性函数，那 <span class="arithmatex">\(h\)</span> 也是积性函数。通过线性筛预处理前 <span class="arithmatex">\(\mathcal O(n^{2/3})\)</span> 项的前缀和，可以把复杂度降低至 <span class="arithmatex">\(\mathcal O(n^{2/3})\)</span>。</p>
+<p>需要注意的一点是，<span class="arithmatex">\(f\)</span> 并不一定需要非常容易计算前缀和，我们只需要它的块筛结果（前者显然隐含了后者）。因为我们对于某一项 <span class="arithmatex">\(\operatorname{S}_g(\lfloor\frac{n}{d}\rfloor)\)</span>，运用性质 2，所需要的 <span class="arithmatex">\(\operatorname{S}_f(d)\)</span> 的 <span class="arithmatex">\(d\)</span> 的值实际上有 <span class="arithmatex">\(d\in\{r: \lfloor\frac{n}{r}\rfloor\neq \lfloor\frac{n}{r+1}\rfloor\}\)</span>，也就是我们只需要它的块筛就够了。</p>
+</li>
+<li>
+<p><strong>除式：</strong></p>
+<p>有数论函数（不必是积性） <span class="arithmatex">\(f,g,h\)</span> 满足 <span class="arithmatex">\(h=f*g\)</span>，设我们已经知道了 <span class="arithmatex">\(g\)</span> 的块筛结果，<span class="arithmatex">\(h\)</span> 是一个容易求单项前缀和的函数，现在要求 <span class="arithmatex">\(f\)</span> 的块筛结果。</p>
+<p>根据上面的推导我们已经知道</p>
+<div class="arithmatex">\[
+\operatorname{S}_h(n)=\sum_{d=1}^{n}g(d)\operatorname{S}_f(\left\lfloor\frac{n}{d}\right\rfloor)
+\]</div>
+<p>我们要求 <span class="arithmatex">\(\operatorname{S}_f(n)\)</span>，所以单独把这一项拿出来</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\operatorname{S}_h(n)&amp;=g(1)\operatorname{S}_f(n)+\sum_{d=2}^{n}g(d)\operatorname{S}_f(\left\lfloor\frac{n}{d}\right\rfloor)\\
+g(1)\operatorname{S}_f(n)&amp;=\operatorname{S}_h(n)-\sum_{d=2}^{n}g(d)\operatorname{S}_f(\left\lfloor\frac{n}{d}\right\rfloor)
+\end{aligned}
+\]</div>
+<p>运用性质 <span class="arithmatex">\(1\)</span>，我们记忆化这个过程，即可在 <span class="arithmatex">\(\mathcal O(n^{2/3})\)</span> 的时间内求出 <span class="arithmatex">\(f\)</span> 的块筛结果。</p>
+</li>
+</ul>
+<p>这两个形式的复杂度证明没有不同，都可以直接用 OI-wiki 上的<a href="https://oi-wiki.org/math/number-theory/du/#时间复杂度">这个推导</a>。</p>
+<h3 id="_5">狄利克雷双曲线法<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h2 id="pn">PN 筛<a class="headerlink" href="#pn" title="Permanent link">&para;</a></h2>
+<h2 id="min25">Min25 筛<a class="headerlink" href="#min25" title="Permanent link">&para;</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1428,17 +1719,19 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "content.action.edit", "content.action.view"], "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "content.action.edit", "content.action.view"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
-        <script src="/javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
