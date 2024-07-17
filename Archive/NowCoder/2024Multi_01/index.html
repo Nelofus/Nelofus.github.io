@@ -3294,10 +3294,10 @@
 \binom{n}{k}\cdot (2^{m-1})^{n-k}\cdot(2^{k}-1)^{m-1}
 \]</div>
 <p>答案就是</p>
-<p>$$
+<div class="arithmatex">\[
 \sum_{k=1}^{n}\binom{n}{k}\cdot (2^{m-1})^{n-k}\cdot(2^{k}-1)^{m-1}
-$$
-组合数可以递推预处理，时间复杂度 <span class="arithmatex">\(\mathcal O(n^2+n\log n)\)</span>。</p>
+\]</div>
+<p>组合数可以递推预处理，时间复杂度 <span class="arithmatex">\(\mathcal O(n^2+n\log n)\)</span>。</p>
 <h2 id="_2">比较简单题<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h3 id="d-xor-of-suffix-sums"><a href="https://ac.nowcoder.com/acm/contest/81596/D">D. XOR of Suffix Sums</a><a class="headerlink" href="#d-xor-of-suffix-sums" title="Permanent link">&para;</a></h3>
 <p>首先要知道 <span class="arithmatex">\(2097152=2^{21}\)</span>，整个题都在模 <span class="arithmatex">\(2^{21}\)</span> 意义下进行。</p>
@@ -3313,7 +3313,9 @@ $$
 <p>然后是这个子问题怎么解决。</p>
 <p>考虑逐位确定异或和，第 <span class="arithmatex">\(k\)</span> 位为 <span class="arithmatex">\(1\)</span>，意味着把所有高于 <span class="arithmatex">\(k\)</span> 的位都忽略后，有奇数个数在 <span class="arithmatex">\([2^k,2^{k+1})\)</span> 之间（最高位为 <span class="arithmatex">\(1\)</span>）。 </p>
 <p>也就是说，模 <span class="arithmatex">\(2^{k+1}\)</span> 后有奇数个值在 <span class="arithmatex">\([2^k,2^{k+1})\)</span> 之间。</p>
-<p>再考虑标记 <span class="arithmatex">\(t\)</span> 的影响，先令 <span class="arithmatex">\(z=t\bmod 2^{k+1}\)</span>，如果 <span class="arithmatex">\(z\le 2^k\)</span>，那么就是询问 <span class="arithmatex">\([2^k-z,2^{k+1}-z)\)</span> 里面的数的个数，否则就是查询 <span class="arithmatex">\([0,2^{k+1}-z)\cup [2^{k+1}-(z-2^k),2^{k+1})\)</span> 里数的个数。这个部分对每个 <span class="arithmatex">\(k\)</span> 开一个树状数组即可。</p>
+<p>再考虑标记 <span class="arithmatex">\(t\)</span> 的影响，先令 <span class="arithmatex">\(z=t\bmod 2^{k+1}\)</span>，如果 <span class="arithmatex">\(z\le 2^k\)</span>，那么就是询问 <span class="arithmatex">\([2^k-z,2^{k+1}-z)\)</span> 里面的数的个数，否则就是查询 <span class="arithmatex">\([0,2^{k+1}-z)\cup [2^{k+1}-(z-2^k),2^{k+1})\)</span> 里数的个数。</p>
+<p>这个部分对每个 <span class="arithmatex">\(k\)</span> 开一个树状数组即可，维护模 <span class="arithmatex">\(2^{k+1}\)</span> 意义下的权值数组即可。具体看代码。 </p>
+<p>时间复杂度 <span class="arithmatex">\(\mathcal O(q\log^2 V)\)</span>。</p>
 <h3 id="b-a-bit-more-common"><a href="https://ac.nowcoder.com/acm/contest/81596/B">B. A Bit More Common</a><a class="headerlink" href="#b-a-bit-more-common" title="Permanent link">&para;</a></h3>
 <p>在 <span class="arithmatex">\(\text{A}\)</span> 的基础上，减去所有只有一个合法子序列的方案数。</p>
 <p>我们考虑这个只有一个合法子序列怎么计算，在 <span class="arithmatex">\(\text{A}\)</span> 的基础上进行修改，也就是说唯一的一个合法子序列是我们钦定的那个长度为 <span class="arithmatex">\(k\)</span> 的子序列。</p>
