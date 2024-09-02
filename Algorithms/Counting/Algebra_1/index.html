@@ -17,7 +17,7 @@
         <link rel="next" href="../Algebra_2/">
       
       
-      <link rel="icon" href="../../../images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
@@ -2716,6 +2716,94 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Diary/2024.08/Day24/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Day#24.md
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2024.09
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            2024.09
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Diary/2024.09/Day02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Day#02.md
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2996,8 +3084,8 @@ F(x)=\frac{1}{1-x}
 <p>即 <span class="arithmatex">\(F(x)\)</span> 为 <span class="arithmatex">\(1-x\)</span> 的多项式乘法逆。</p>
 <p>我们指出，这样的分析要求 <span class="arithmatex">\(F(x)\)</span> 是收敛的，但由于 <span class="arithmatex">\(x\)</span> 是一个占位符，我们<strong>并不关心其收敛性，不妨直接假设它就是收敛的</strong>。</p>
 <p>如果你不能接受这个看法，也可以就把这式看作是 <span class="arithmatex">\(\displaystyle \sum_{n=0}^{+\infty}x^n\)</span> 的一种缩写，我们用这样的缩写式来避免每次都写出一长串式子的麻烦，并在最后求值的时候将得到的式子重新展开成无穷和式。对于这种<strong>变量和常数作有限次加减乘除，或某些重要的特殊运算（如阶乘）所得到的</strong>式子，我们称其为封闭形式。</p>
-<p>这样的一个无穷幂级数收敛到一个封闭形式的样子很容易让我们联想到 <strong>Maclaurin</strong> 级数。于是我们立即由 <strong>Maclaurin</strong> 级数得到一系列的数列及其对应 OGF 的封闭形式：
-$$
+<p>这样的一个无穷幂级数收敛到一个封闭形式的样子很容易让我们联想到 <strong>Maclaurin</strong> 级数。于是我们立即由 <strong>Maclaurin</strong> 级数得到一系列的数列及其对应 OGF 的封闭形式：</p>
+<p>$$
 \begin{array}{ccc}
 数列 &amp;\text{OGF} &amp;封闭形式\
 \ag{1,1,1,\cdots} &amp;\displaystyle\sum_{k=0}^{+\infty}x^k &amp;\dfrac{1}{1-x}\
@@ -3030,10 +3118,10 @@ F(x)=xF(x)+x^2F(x)+x
 <p>但是这有什么用？我们考虑通过一些手段反向得到它的通项。</p>
 <h2 id="egf">EGF<a class="headerlink" href="#egf" title="Permanent link">&para;</a></h2>
 <p>序列 <span class="arithmatex">\(\ag{a_0,a_1,a_2,\cdots}\)</span> 的 EGF 是</p>
-<p>$$
+<div class="arithmatex">\[
 \sum_{i=0}^{+\infty}\frac{a_i}{i!}x^i
-$$
-即序列 <span class="arithmatex">\(\ag{\frac{a_0}{1},\frac{a_1}{1},\frac{a_2}{2},\frac{a_3}{6},\frac{a_4}{24},\cdots }\)</span> 的 OGF，也就是，在第 <span class="arithmatex">\(i\)</span> 项额外除去一个 <span class="arithmatex">\(i!\)</span>，常用于有标号计数体系之中。</p>
+\]</div>
+<p>即序列 <span class="arithmatex">\(\ag{\frac{a_0}{1},\frac{a_1}{1},\frac{a_2}{2},\frac{a_3}{6},\frac{a_4}{24},\cdots }\)</span> 的 OGF，也就是，在第 <span class="arithmatex">\(i\)</span> 项额外除去一个 <span class="arithmatex">\(i!\)</span>，常用于有标号计数体系之中。</p>
 <p>注意序列 <span class="arithmatex">\(\ag{1,1,1,\cdots, 1}\)</span> 的 EGF 为 <span class="arithmatex">\(\exp(x)\)</span>，这也是其 EGF 之名的由来。同样，我们立即能导出一批 EGF 的封闭形式：</p>
 <p>$$
 \begin{array}{ccc}

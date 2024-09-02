@@ -17,7 +17,7 @@
         <link rel="next" href="../Calculating_1/">
       
       
-      <link rel="icon" href="../../../images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
@@ -2832,6 +2832,94 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Diary/2024.08/Day24/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Day#24.md
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2024.09
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            2024.09
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Diary/2024.09/Day02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Day#02.md
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3183,53 +3271,53 @@
 <blockquote>
 <p><span class="arithmatex">\(n+1\)</span> 个不同的点可以唯一确定一个 <span class="arithmatex">\(n\)</span> 次多项式。</p>
 </blockquote>
-<p>一个 <span class="arithmatex">\(n\)</span> 次多项式 <span class="arithmatex">\(F(x)\)</span> 就可以被写作
-$$
-{(x_0,F(x_0)),(x_1,F(x_1)),\ldots, (x_n,F(x_n)}
+<p>一个 <span class="arithmatex">\(n\)</span> 次多项式 <span class="arithmatex">\(F(x)\)</span> 就可以被写作</p>
+<div class="arithmatex">\[
+\{(x_0,F(x_0)),(x_1,F(x_1)),\ldots, (x_n,F(x_n)\}
 \nonumber
-$$
-这被称作多项式的<strong>点值表示</strong>，而原来的表示法被称为多项式的<strong>系数表示</strong>。</p>
+\]</div>
+<p>这被称作多项式的<strong>点值表示</strong>，而原来的表示法被称为多项式的<strong>系数表示</strong>。</p>
 <blockquote>
 <p><strong>证明：</strong></p>
 <p>假设 <span class="arithmatex">\(F(x)=p_0+p_1x^1+p_2x^2+\ldots + p_nx^n\)</span></p>
-<p>那么我们把 <span class="arithmatex">\(n+1\)</span> 个不同的 <span class="arithmatex">\(x\)</span> 代入，我们可以得到一个线性方程组：
-$$
-\left{\begin{aligned}
-F(x_0)&amp;=p_0+p_1x_0+p_2x_0^2+\ldots+p_nx_0^n\
-F(x_1)&amp;=p_0+p_1x_1+p_2x_1^2+\ldots+p_nx_1^n\
-F(x_2)&amp;=p_0+p_1x_2+p_2x_2^2+\ldots+p_nx_2^n\
-&amp;\cdots\
-F(x_n)&amp;=p_0+p_1x_n+p_2x_n^2+\ldots+p_nx_n^n\
+<p>那么我们把 <span class="arithmatex">\(n+1\)</span> 个不同的 <span class="arithmatex">\(x\)</span> 代入，我们可以得到一个线性方程组：</p>
+<div class="arithmatex">\[
+\left\{\begin{aligned}
+F(x_0)&amp;=p_0+p_1x_0+p_2x_0^2+\ldots+p_nx_0^n\\
+F(x_1)&amp;=p_0+p_1x_1+p_2x_1^2+\ldots+p_nx_1^n\\
+F(x_2)&amp;=p_0+p_1x_2+p_2x_2^2+\ldots+p_nx_2^n\\
+&amp;\cdots\\
+F(x_n)&amp;=p_0+p_1x_n+p_2x_n^2+\ldots+p_nx_n^n\\
 \end{aligned}\right.
 \nonumber
-$$
-这可以被写成矩阵的形式：
-$$
+\]</div>
+<p>这可以被写成矩阵的形式：</p>
+<div class="arithmatex">\[
 \begin{bmatrix}
-F(x_0)\
-F(x_1)\
-F(x_2)\
-\vdots\
-F(x_n)\
+F(x_0)\\
+F(x_1)\\
+F(x_2)\\
+\vdots\\
+F(x_n)\\
 \end{bmatrix}
 =
 \begin{bmatrix}
-1 &amp;x_0 &amp;x_0^2 &amp;\cdots &amp;x_0^n\
-1 &amp;x_1 &amp;x_1^2 &amp;\cdots &amp;x_1^n\
-1 &amp;x_2 &amp;x_2^2 &amp;\cdots &amp;x_2^n\
-\vdots &amp;\vdots &amp;\vdots &amp;\ddots &amp;\vdots\
-1 &amp;x_n &amp;x_n^2 &amp;\cdots &amp;x_n^n\
+1 &amp;x_0 &amp;x_0^2 &amp;\cdots &amp;x_0^n\\
+1 &amp;x_1 &amp;x_1^2 &amp;\cdots &amp;x_1^n\\
+1 &amp;x_2 &amp;x_2^2 &amp;\cdots &amp;x_2^n\\
+\vdots &amp;\vdots &amp;\vdots &amp;\ddots &amp;\vdots\\
+1 &amp;x_n &amp;x_n^2 &amp;\cdots &amp;x_n^n\\
 \end{bmatrix}
 \begin{bmatrix}
-p_0\
-p_1\
-p_2\
-\vdots\
+p_0\\
+p_1\\
+p_2\\
+\vdots\\
 p_n
 \end{bmatrix}
 \nonumber
-$$
-中间的是范德蒙德矩阵，由于我们选的 <span class="arithmatex">\(n+1\)</span> 个 <span class="arithmatex">\(x\)</span> 两两不同，则其行列式不为 <span class="arithmatex">\(0\)</span>，线性方程组有唯一解。</p>
+\]</div>
+<p>中间的是范德蒙德矩阵，由于我们选的 <span class="arithmatex">\(n+1\)</span> 个 <span class="arithmatex">\(x\)</span> 两两不同，则其行列式不为 <span class="arithmatex">\(0\)</span>，线性方程组有唯一解。</p>
 </blockquote>
 <p>那么对于两个 <span class="arithmatex">\(n\)</span> 次多项式，我们求出他们在 <span class="arithmatex">\(2n+1\)</span> 个不同的 <span class="arithmatex">\(x\)</span> 时的取值，然后把对应位置的值相乘，然后再还原为系数表示，我们就知道了两个多项式相乘的结果，中间相乘的过程是 <span class="arithmatex">\(O(n)\)</span> 的。</p>
 <p>唯一的问题是，我们怎么在低于 <span class="arithmatex">\(O(n^2)\)</span> 的时间内求出系数表示的点值表示/把点值表示还原为系数表示？</p>
@@ -3239,70 +3327,70 @@ $$
 <h4 id="_1">大致流程<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <p>一个关键的想法是，如果 <span class="arithmatex">\(f(x)\)</span> 是一个偶函数，那么 <span class="arithmatex">\(f(x)=f(-x)\)</span>，所以我们只要计算一个点的点值就知道了两个点的点值。</p>
 <p>如果 <span class="arithmatex">\(f(x)\)</span> 是个奇函数，则 <span class="arithmatex">\(f(x)=-f(-x)\)</span>，仍然是计算一个值即可。</p>
-<p>那么我们不妨把 <span class="arithmatex">\(F\)</span> 分为奇偶两部分，即：
-$$
+<p>那么我们不妨把 <span class="arithmatex">\(F\)</span> 分为奇偶两部分，即：</p>
+<div class="arithmatex">\[
 \begin{aligned}
-F(x)&amp;=a_0+a_1x+a_2x^2+\cdots + a_nx^n\
-&amp;=(a_0+a_2x^2+\cdots)+x(a_1+a_3x^2+\cdots)\
+F(x)&amp;=a_0+a_1x+a_2x^2+\cdots + a_nx^n\\
+&amp;=(a_0+a_2x^2+\cdots)+x(a_1+a_3x^2+\cdots)\\
 &amp;=F_e(x^2)+xF_o(x^2)
 \end{aligned}
 \nonumber
-$$
-那么
-$$
+\]</div>
+<p>那么</p>
+<div class="arithmatex">\[
 \begin{aligned}
-F(x_i)&amp;=F_e(x^2)+xF_o(x^2)\
+F(x_i)&amp;=F_e(x^2)+xF_o(x^2)\\
 F(-x_i)&amp;=F_e(x^2)-xF_o(x^2)
 \end{aligned}
 \nonumber
-$$
-再对 <span class="arithmatex">\(F_e(x^2)\)</span> 与 <span class="arithmatex">\(F_o(x^2)\)</span> 递归计算即可。</p>
+\]</div>
+<p>再对 <span class="arithmatex">\(F_e(x^2)\)</span> 与 <span class="arithmatex">\(F_o(x^2)\)</span> 递归计算即可。</p>
 <p>由于我们初始选取的所有点对都是相反数，那么递推的时候就只剩下 <span class="arithmatex">\(\frac{n}{2}\)</span> 个点。如此递归计算，复杂度即为 <span class="arithmatex">\(O(n\log n)\)</span>。</p>
 <p>但是不难注意到一个问题，我们在递归子问题时，实际上代入的是 <span class="arithmatex">\(x^2\)</span> 而不是 <span class="arithmatex">\(x\)</span>，那么我们就没有办法取相反数，因为<strong>在实数域内</strong>，<span class="arithmatex">\(x^2\)</span> 总应该是正数。</p>
-<p>让我们举一个例子看看上述过程是怎么做的，从而考察我们所选的数需要有什么性质。假设我们要将一个三次多项式 <span class="arithmatex">\(F(x)=-1-2x+x^2+x^3\)</span> 转为点值表示，为此我们需要求其在四个点 <span class="arithmatex">\(x_0,-x_0,x_1,-x_1\)</span> 的值，那么首先拆成：
-$$
+<p>让我们举一个例子看看上述过程是怎么做的，从而考察我们所选的数需要有什么性质。假设我们要将一个三次多项式 <span class="arithmatex">\(F(x)=-1-2x+x^2+x^3\)</span> 转为点值表示，为此我们需要求其在四个点 <span class="arithmatex">\(x_0,-x_0,x_1,-x_1\)</span> 的值，那么首先拆成：</p>
+<div class="arithmatex">\[
 \begin{aligned}
-F_e(x^2)&amp;=-1+x^2\
-F_o(x^2)&amp;=-2+x^2\
-F(x)&amp;=F_e(x^2)+xF_o(x^2)\
+F_e(x^2)&amp;=-1+x^2\\
+F_o(x^2)&amp;=-2+x^2\\
+F(x)&amp;=F_e(x^2)+xF_o(x^2)\\
 \end{aligned}
 \nonumber
-$$
-那么，求出 <span class="arithmatex">\(F_e(x_0^2)\)</span> 与 <span class="arithmatex">\(F_o(x_0^2)\)</span> 的值，就可以直接推出
-$$
+\]</div>
+<p>那么，求出 <span class="arithmatex">\(F_e(x_0^2)\)</span> 与 <span class="arithmatex">\(F_o(x_0^2)\)</span> 的值，就可以直接推出</p>
+<div class="arithmatex">\[
 \begin{aligned}
-F(x_0)&amp;=F_e(x_0^2)+x_0F_o(x_0^2)\
-F(-x_0)&amp;=F_e(x_0^2)-x_0F_o(x_0^2)\
+F(x_0)&amp;=F_e(x_0^2)+x_0F_o(x_0^2)\\
+F(-x_0)&amp;=F_e(x_0^2)-x_0F_o(x_0^2)\\
 \end{aligned}
 \nonumber
-$$
-而 <span class="arithmatex">\(x_1\)</span> 的情况类似。
-$$
+\]</div>
+<p>而 <span class="arithmatex">\(x_1\)</span> 的情况类似。</p>
+<div class="arithmatex">\[
 \begin{aligned}
-F(x_1)&amp;=F_e(x_1^2)+x_1F_o(x_1^2)\
-F(-x_1)&amp;=F_e(x_1^2)-x_1F_o(x_1^2)\
+F(x_1)&amp;=F_e(x_1^2)+x_1F_o(x_1^2)\\
+F(-x_1)&amp;=F_e(x_1^2)-x_1F_o(x_1^2)\\
 \end{aligned}
 \nonumber
-$$
-接下来，我们要求 <span class="arithmatex">\(F_e(x)\)</span> 在 <span class="arithmatex">\(x_0^2\)</span> 与 <span class="arithmatex">\(x_1^2\)</span> 处的值，并且现在 <span class="arithmatex">\(x_1^2=-x_0^2\)</span>，我们先不管这是怎么做到的。记 <span class="arithmatex">\(F_e\)</span> 为 <span class="arithmatex">\(G\)</span>。</p>
-<p>再次类似地拆开：
-$$
+\]</div>
+<p>接下来，我们要求 <span class="arithmatex">\(F_e(x)\)</span> 在 <span class="arithmatex">\(x_0^2\)</span> 与 <span class="arithmatex">\(x_1^2\)</span> 处的值，并且现在 <span class="arithmatex">\(x_1^2=-x_0^2\)</span>，我们先不管这是怎么做到的。记 <span class="arithmatex">\(F_e\)</span> 为 <span class="arithmatex">\(G\)</span>。</p>
+<p>再次类似地拆开：</p>
+<div class="arithmatex">\[
 \begin{aligned}
-G_e(x^4)&amp;=-1\
-G_o(x^4)&amp;=1\
+G_e(x^4)&amp;=-1\\
+G_o(x^4)&amp;=1\\
 G(x^2)&amp;=G_e(x^4)+x^2G_o(x^4)
 \end{aligned}
 \nonumber
-$$
-因为 <span class="arithmatex">\(x_1^2=-x_0^2\)</span>，且我们直接知道 <span class="arithmatex">\(G_e(x^4)\)</span> 与 <span class="arithmatex">\(G_o(x^4)\)</span> 就是常数，所以立刻有：
-$$
+\]</div>
+<p>因为 <span class="arithmatex">\(x_1^2=-x_0^2\)</span>，且我们直接知道 <span class="arithmatex">\(G_e(x^4)\)</span> 与 <span class="arithmatex">\(G_o(x^4)\)</span> 就是常数，所以立刻有：</p>
+<div class="arithmatex">\[
 \begin{aligned}
-G(x_0^2)=G_e(x^4)+x_0^2G_o(x^4)=-1+x_0^2\
+G(x_0^2)=G_e(x^4)+x_0^2G_o(x^4)=-1+x_0^2\\
 G(x_1^2)=G_e(x^4)-x_0^2G_o(x^4)=-1-x_0^2
 \end{aligned}
 \nonumber
-$$
-并且，<span class="arithmatex">\(F_o\)</span> 的情况也类似，再回退即可递推完。</p>
+\]</div>
+<p>并且，<span class="arithmatex">\(F_o\)</span> 的情况也类似，再回退即可递推完。</p>
 <p>总结一下，我们需要的一组 <span class="arithmatex">\(x\)</span> 需要满足的性质是：</p>
 <ol>
 <li><span class="arithmatex">\(x_0,x_1,x_2,\cdots,x_{2^k-1}\)</span>，其中 <span class="arithmatex">\(x_0,x_{2^{k-1}}\)</span> 互为相反数，<span class="arithmatex">\(x_1,x_{2^{k-1}+1}\)</span> 互为相反数……（这里的顺序与上面略有不同，为了实现方便与适配下面的内容）</li>
@@ -3312,36 +3400,38 @@ $$
 <h4 id="_2">单位根<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
 <p>在复数域中，一些满足我们需求的数是<strong>单位根</strong>，并且可以证明，这是唯一满足我们需求的数。</p>
 <p>以下的 <span class="arithmatex">\(n\)</span> 指的是我们所需的多项式的<strong>项数</strong>，即<strong>次数</strong><span class="arithmatex">\(+1\)</span>，这意味着 <span class="arithmatex">\(n\)</span> 是一个 <span class="arithmatex">\(2\)</span> 的幂。</p>
-<p>以单位圆点为起点，单位圆的 <span class="arithmatex">\(n\)</span> 等分点为终点，我们可以得到 <span class="arithmatex">\(n\)</span> 个复数。我们称 <span class="arithmatex">\(n\)</span> 次本原单位根是它们之中幅角为正且<strong>最小</strong>的复数，也就是：
-$$
+<p>以单位圆点为起点，单位圆的 <span class="arithmatex">\(n\)</span> 等分点为终点，我们可以得到 <span class="arithmatex">\(n\)</span> 个复数。我们称 <span class="arithmatex">\(n\)</span> 次本原单位根是它们之中幅角为正且<strong>最小</strong>的复数，也就是：</p>
+<div class="arithmatex">\[
 \omega_n=\cos\frac{2\pi}{n}+i\sin\frac{2\pi}{n}
 \nonumber
-$$</p>
-<p>根据欧拉公式，我们将 <span class="arithmatex">\(\omega_n\)</span> 写作 <span class="arithmatex">\(e^{i\frac{2\pi}{n}}\)</span>（或者直接从复数乘法就是旋转的角度）可以知道：
-$$
+\]</div>
+<p>根据欧拉公式，我们将 <span class="arithmatex">\(\omega_n\)</span> 写作 <span class="arithmatex">\(e^{i\frac{2\pi}{n}}\)</span>（或者直接从复数乘法就是旋转的角度）可以知道：</p>
+<div class="arithmatex">\[
 \begin{aligned}
 \omega_n^k=\cos\frac{2k\pi}{n}+i\sin\frac{2k\pi}{n}
 \end{aligned}
 \nonumber
-$$
-仔细观察可以发现几条非常好的性质：</p>
+\]</div>
+<p>仔细观察可以发现几条非常好的性质：</p>
 <ol>
-<li><span class="arithmatex">\(\omega_n^{k+\frac{n}{2}}=-\omega_n^k,k\in \mathbb N^+\)</span></li>
-</ol>
+<li>
+<p><span class="arithmatex">\(\omega_n^{k+\frac{n}{2}}=-\omega_n^k,k\in \mathbb N^+\)</span></p>
 <p>这条性质我们把前面的式子展开成 <span class="arithmatex">\(\omega^{k}_n\omega_n^{\frac{n}{2}}\)</span>，再把后面的代入上式即可证明。</p>
 <p>这意味着我们如果把初始的 <span class="arithmatex">\(x_0,x_1,x_2,\cdots, x_n\)</span> 选为 <span class="arithmatex">\(\omega_n^{0},\omega_n^{1},\omega_n^{2},\cdots, \omega_n^{n-1}\)</span></p>
 <p>那么这就满足上面所需的第一条要求，<span class="arithmatex">\(\omega_n^0\)</span> 与 <span class="arithmatex">\(\omega_n^{\frac{n}{2}}\)</span> 是一组，<span class="arithmatex">\(\omega_n^1\)</span> 与 <span class="arithmatex">\(\omega_n^{1+\frac{n}{2}}\)</span> 是一组……每组中均互为对方的相反数。</p>
-<ol>
-<li><span class="arithmatex">\(\omega_{kn}^{kr}=\omega_{n}^{r},r\in \mathbb N^{+}\)</span></li>
-</ol>
+</li>
+<li>
+<p><span class="arithmatex">\(\omega_{kn}^{kr}=\omega_{n}^{r},r\in \mathbb N^{+}\)</span></p>
 <p>这条性质仍然是直接展开即得证。</p>
 <p>现在我们将所有数逐个平方，即变为 <span class="arithmatex">\(\omega_n^{0},\omega_n^{2},\omega_n^{4},\cdots, \omega^{2n-2}_n\)</span>，由于去重的原因后半部分不用管，只留 <span class="arithmatex">\(\omega_n^{0},\omega_{n}^2,\omega_n^{4},\cdots,\omega_{n}^{n-2}\)</span>。</p>
-<p>由这条性质，我们可以把上面的再写成：
-   $$
-   \omega_{\frac{n}{2}}^{0},\omega_{\frac{n}{2}}^{1},\omega_{\frac{n}{2}}^{2},\cdots,\omega_{\frac{n}{2}}^{\frac{n}{2}-1}
-   \nonumber
-   $$
-   这又恰好满足了我们上面所需性质 <span class="arithmatex">\(2\)</span> 中重新标定的需求！并且这一组单位根只是把 <span class="arithmatex">\(n\)</span> 缩小到原来的 <span class="arithmatex">\(\frac{1}{2}\)</span>，自然仍然满足性质 <span class="arithmatex">\(1\)</span>，单位根的性质完美契合了我们的所需！</p>
+<p>由这条性质，我们可以把上面的再写成：</p>
+<div class="arithmatex">\[
+\omega_{\frac{n}{2}}^{0},\omega_{\frac{n}{2}}^{1},\omega_{\frac{n}{2}}^{2},\cdots,\omega_{\frac{n}{2}}^{\frac{n}{2}-1}
+\nonumber
+\]</div>
+<p>这又恰好满足了我们上面所需性质 <span class="arithmatex">\(2\)</span> 中重新标定的需求！并且这一组单位根只是把 <span class="arithmatex">\(n\)</span> 缩小到原来的 <span class="arithmatex">\(\frac{1}{2}\)</span>，自然仍然满足性质 <span class="arithmatex">\(1\)</span>，单位根的性质完美契合了我们的所需！</p>
+</li>
+</ol>
 <h4 id="_3">实现<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <p>至此我们已经可以写出将多项式的系数表示转化为点值表示的过程，只要我们将我们需要求的 <span class="arithmatex">\(x\)</span> 选为 <span class="arithmatex">\(n\)</span> 次单位根的各次幂即可，给出一份最朴素的实现：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">//a数组最开始是系数表示</span>
@@ -3374,52 +3464,52 @@ $$
 </code></pre></div>
 <h3 id="idft">IDFT<a class="headerlink" href="#idft" title="Permanent link">&para;</a></h3>
 <p>我们还得把点值表示换成系数表示，所幸这部分其实非常的简单，与 FFT 几乎完全相同。</p>
-<p>先不管上面的 FFT 干了啥，考虑暴力的系数表示转点值表示。
-$$
-\left{\begin{aligned}
-F(\omega_n^0)&amp;=a_0+a_1(\omega_n^0)^1+a_2\omega(\omega_n^0)^2+\cdots+a_{n-1}(\omega_n^0)^{n-1}\
-F(\omega_n^1)&amp;=a_0+a_1(\omega_n^1)^1+a_2\omega(\omega_n^1)^2+\cdots+a_{n-1}(\omega_n^1)^{n-1}\
-&amp;\cdots\
-F(\omega_n^{n-1})&amp;=a_0+a_1(\omega_n^{n-1})^1+a_2\omega(\omega_n^{n-1})^2+\cdots+a_{n-1}(\omega_n^{n-1})^{n-1}\
+<p>先不管上面的 FFT 干了啥，考虑暴力的系数表示转点值表示。</p>
+<div class="arithmatex">\[
+\left\{\begin{aligned}
+F(\omega_n^0)&amp;=a_0+a_1(\omega_n^0)^1+a_2\omega(\omega_n^0)^2+\cdots+a_{n-1}(\omega_n^0)^{n-1}\\
+F(\omega_n^1)&amp;=a_0+a_1(\omega_n^1)^1+a_2\omega(\omega_n^1)^2+\cdots+a_{n-1}(\omega_n^1)^{n-1}\\
+&amp;\cdots\\
+F(\omega_n^{n-1})&amp;=a_0+a_1(\omega_n^{n-1})^1+a_2\omega(\omega_n^{n-1})^2+\cdots+a_{n-1}(\omega_n^{n-1})^{n-1}\\
 \end{aligned}\right.
 \nonumber
-$$
-这可以被写成一个线性变换的形式：
-$$
+\]</div>
+<p>这可以被写成一个线性变换的形式：</p>
+<div class="arithmatex">\[
 \begin{bmatrix}
-F(\omega_{n}^{0})\
-F(\omega_{n}^{1})\
-F(\omega_{n}^{2})\
-\vdots\
+F(\omega_{n}^{0})\\
+F(\omega_{n}^{1})\\
+F(\omega_{n}^{2})\\
+\vdots\\
 F(\omega_n^{n-1})
 \end{bmatrix}
 =
 \begin{bmatrix}
-1 &amp;(\omega_n^0)^1 &amp;(\omega_n^0)^2 &amp;\cdots &amp;(\omega_n^0)^{n-1}\
-1 &amp;(\omega_n^1)^1 &amp;(\omega_n^1)^2 &amp;\cdots &amp;(\omega_n^1)^{n-1}\
-1 &amp;(\omega_n^2)^1 &amp;(\omega_n^2)^2 &amp;\cdots &amp;(\omega_n^2)^{n-1}\
-\vdots &amp;\vdots &amp;\vdots &amp;\ddots &amp;\vdots\
-1 &amp;(\omega_n^{n-1})^1 &amp;(\omega_n^{n-1})^2 &amp;\cdots &amp;(\omega_n^{n-1})^{n-1}\
+1 &amp;(\omega_n^0)^1 &amp;(\omega_n^0)^2 &amp;\cdots &amp;(\omega_n^0)^{n-1}\\
+1 &amp;(\omega_n^1)^1 &amp;(\omega_n^1)^2 &amp;\cdots &amp;(\omega_n^1)^{n-1}\\
+1 &amp;(\omega_n^2)^1 &amp;(\omega_n^2)^2 &amp;\cdots &amp;(\omega_n^2)^{n-1}\\
+\vdots &amp;\vdots &amp;\vdots &amp;\ddots &amp;\vdots\\
+1 &amp;(\omega_n^{n-1})^1 &amp;(\omega_n^{n-1})^2 &amp;\cdots &amp;(\omega_n^{n-1})^{n-1}\\
 \end{bmatrix}
 \begin{bmatrix}
-a_0\
-a_1\
-a_2\
-\cdots\
+a_0\\
+a_1\\
+a_2\\
+\cdots\\
 a_{n-1}
 \end{bmatrix}
 \nonumber
-$$
-FFT 实际上就是算了上面的这样一个矩阵乘法。</p>
+\]</div>
+<p>FFT 实际上就是算了上面的这样一个矩阵乘法。</p>
 <p>所以我们只要在左边的系数表示<strong>左乘</strong>中间的范德蒙德矩阵的逆矩阵，就得到了系数表示。</p>
 <p>中间的矩阵形式非常好，直接给出结论：其逆矩阵就是每个元素先<strong>取倒数</strong>，再<strong>除以变换长度</strong> <span class="arithmatex">\(n\)</span>。</p>
 <p>~~为啥直接给出结论是因为我不想算了~~</p>
-<p>而如果我们要将单位根取倒数，这实际上就是：
-$$
+<p>而如果我们要将单位根取倒数，这实际上就是：</p>
+<div class="arithmatex">\[
 \omega_n^{-1}=e^{-i\frac{2\pi}{n}}=\cos-\frac{2\pi}{n}+i\sin-\frac{2\pi}{n}=\cos\frac{2\pi}{n}-i\sin\frac{2\pi}{n}
 \nonumber
-$$
-所以我们在 FFT 的过程中将所有单位根虚部取成相反数，所得到的就是 IDFT 的过程，至于除以 <span class="arithmatex">\(n\)</span>，可以在计算完成后一并解决。</p>
+\]</div>
+<p>所以我们在 FFT 的过程中将所有单位根虚部取成相反数，所得到的就是 IDFT 的过程，至于除以 <span class="arithmatex">\(n\)</span>，可以在计算完成后一并解决。</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">//inv = 1 时为 FFT, inv = -1 时为 IDFT</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kt">void</span><span class="w"> </span><span class="nf">FFT</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">complex</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="o">*</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">inv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
@@ -3523,41 +3613,41 @@ $$
 <p>如果 <span class="arithmatex">\(\gcd(g,n)=1\)</span> 且 <span class="arithmatex">\(n&gt;0\)</span>，那么 <span class="arithmatex">\(g\)</span> 为 <span class="arithmatex">\(n\)</span> 的一个充要条件是 <span class="arithmatex">\(\{g^1,g^2,g^3,\cdots, g^{\varphi(n)}\}\)</span> 是 <span class="arithmatex">\(n\)</span> 的一组简化剩余系。这是因为由阶的定义，集合中的任意两个元素模 <span class="arithmatex">\(n\)</span> 不同余，且 <span class="arithmatex">\(\gcd(g,n)=1\)</span>，则该集合就是 <span class="arithmatex">\(n\)</span> 的一组简化剩余系。</p>
 <p>说了这么多定义，原根到底为什么满足我们上面的要求？</p>
 <p>通常模数都是素数，那么 <span class="arithmatex">\(\varphi(p)=p-1\)</span>，所以 <span class="arithmatex">\(p\)</span> 的一个原根 <span class="arithmatex">\(g\)</span> 自然满足 <span class="arithmatex">\(\gcd(p,n)=1\)</span>，则 <span class="arithmatex">\(g\)</span> 的从 <span class="arithmatex">\(1\)</span> 到 <span class="arithmatex">\(p-1\)</span> 次方在模 <span class="arithmatex">\(p\)</span> 意义下可以取遍 <span class="arithmatex">\(1\sim p-1\)</span> 中的每一个值。并且每个值唯一对应一个 <span class="arithmatex">\(g^k,k\in[1,p-1)\)</span></p>
-<p>现在我们假设 <span class="arithmatex">\(n | (p-1)\)</span>，<span class="arithmatex">\(n\)</span> 与上面意义相同，都是 <span class="arithmatex">\(2\)</span> 的某个幂，定义
-$$
+<p>现在我们假设 <span class="arithmatex">\(n | (p-1)\)</span>，<span class="arithmatex">\(n\)</span> 与上面意义相同，都是 <span class="arithmatex">\(2\)</span> 的某个幂，定义</p>
+<div class="arithmatex">\[
 g_n=g^{\frac{p-1}{n}}
 \nonumber
-$$
-根据费马小定理，我们有 <span class="arithmatex">\(g_n^n=g^{n\frac{p-1}{n}}=g^{p-1}=1\)</span>，也就是这仍然是每 <span class="arithmatex">\(n\)</span> 次方一循环的，与单位根相同。</p>
+\]</div>
+<p>根据费马小定理，我们有 <span class="arithmatex">\(g_n^n=g^{n\frac{p-1}{n}}=g^{p-1}=1\)</span>，也就是这仍然是每 <span class="arithmatex">\(n\)</span> 次方一循环的，与单位根相同。</p>
 <p>单位根的性质 <span class="arithmatex">\(1\)</span>，<span class="arithmatex">\(\omega_n^{k+\frac{n}{2}}=-\omega_n^k,k\in \mathbb N^+\)</span> 可以被等价地叙述为 <span class="arithmatex">\(\omega_n^{\frac{n}{2}}=-\omega_n\)</span></p>
-<p>让我们考虑 <span class="arithmatex">\(g_n^{\frac{n}{2}}\)</span>：
-$$
+<p>让我们考虑 <span class="arithmatex">\(g_n^{\frac{n}{2}}\)</span>：</p>
+<div class="arithmatex">\[
 \begin{aligned}
-g^{\frac{n}{2}}_{n}&amp;=g^{\frac{n}{2}\cdot\frac{p-1}{n}}\
+g^{\frac{n}{2}}_{n}&amp;=g^{\frac{n}{2}\cdot\frac{p-1}{n}}\\
 &amp;=g^{\frac{p-1}{2}}
 \end{aligned}
 \nonumber
-$$
-又因为
-$$
+\]</div>
+<p>又因为</p>
+<div class="arithmatex">\[
 (g^{\frac{p-1}{2}})^2=g^{p-1},g^{p-1}\equiv 1\pmod p
 \nonumber
-$$
-根据原根的定义，<span class="arithmatex">\(g^{\frac{p-1}{2}}\)</span> 必定不与 <span class="arithmatex">\(1\)</span> 同余，因为如果这样就不满足每一个值唯一对应一个 <span class="arithmatex">\(g^k,k\in[1,p-1)\)</span></p>
-<p>所以就一定有：
-$$
+\]</div>
+<p>根据原根的定义，<span class="arithmatex">\(g^{\frac{p-1}{2}}\)</span> 必定不与 <span class="arithmatex">\(1\)</span> 同余，因为如果这样就不满足每一个值唯一对应一个 <span class="arithmatex">\(g^k,k\in[1,p-1)\)</span></p>
+<p>所以就一定有：</p>
+<div class="arithmatex">\[
 g_n^{\frac{n}{2}}\equiv -1\pmod p
 \nonumber
-$$
-满足我们所需的性质 <span class="arithmatex">\(1\)</span>。</p>
-<p>对于满足性质 <span class="arithmatex">\(2\)</span> 的证明是简单的：
-$$
+\]</div>
+<p>满足我们所需的性质 <span class="arithmatex">\(1\)</span>。</p>
+<p>对于满足性质 <span class="arithmatex">\(2\)</span> 的证明是简单的：</p>
+<div class="arithmatex">\[
 \begin{aligned}
 g^{rk}_{rn}=g^{\frac{rk(p-1)}{rn}}=g^{k}_n
 \end{aligned}
 \nonumber
-$$
-所以如果我们直接把上面 FFT 的代码中的单位根全部替换成对应的 <span class="arithmatex">\(g_n\)</span>，就可以得到 NTT 的代码了。</p>
+\]</div>
+<p>所以如果我们直接把上面 FFT 的代码中的单位根全部替换成对应的 <span class="arithmatex">\(g_n\)</span>，就可以得到 NTT 的代码了。</p>
 <p>唯一的问题是，我们总是需要满足 <span class="arithmatex">\(n|p-1\)</span>，而我们常用的模数 <span class="arithmatex">\(998244353\)</span> 满足 <span class="arithmatex">\(998244352=7\times17\times2^{23}\)</span>，而 <span class="arithmatex">\(1004535809\)</span> 满足 <span class="arithmatex">\(1004535808=479\times 2^{21}\)</span>，<span class="arithmatex">\(469762049\)</span> 满足 <span class="arithmatex">\(469762048=7\times 2^{26}\)</span>，可惜的是 <span class="arithmatex">\(1000000007\)</span> 的性质就要差得多，<span class="arithmatex">\(1000000006=2\times 500000003\)</span>，对于这种情况，我们将在后面介绍解决方法。</p>
 <p>到这里我们就可以写出 NTT 了，但这个多项式乘法也太慢了，能不能更猛一点啊？</p>
 <h2 id="_5">优化<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
@@ -3572,12 +3662,12 @@ $$
 <p>从小到大做，而 <span class="arithmatex">\(\operatorname{rev}(0)=0\)</span></p>
 <p>那么我们已经知道了 <span class="arithmatex">\(\operatorname{rev}(\lfloor\frac{i}{2}\rfloor)\)</span> 的结果。我们要翻转 <span class="arithmatex">\(i\)</span>，可以看做先翻转 <span class="arithmatex">\(\lfloor\frac{i}{2}\rfloor\)</span>，将其右移一位，然后再最高位上填上末尾。</p>
 <p>举个例子，我们要翻转 <span class="arithmatex">\(\color{red}{01101010}\color{green}1\)</span>，我们已经知道了 <span class="arithmatex">\(0\color{red}01101010\)</span>(先去掉末位再在前面补 <span class="arithmatex">\(0\)</span>)，那么翻转之后就是 <span class="arithmatex">\(\color{red}{01010110}\color{black}{0}\)</span>，去掉最后一位变成 <span class="arithmatex">\(\color{red}{01010110}\)</span>，随后在最前面补上 <span class="arithmatex">\(1\)</span>，就变成 <span class="arithmatex">\(\color{green}1\color{red}{01101010}\)</span>，这就是我们所需的翻转。</p>
-<p>假设整个序列的<strong>长度</strong>是 <span class="arithmatex">\(2^k\)</span>，那么：
-$$
+<p>假设整个序列的<strong>长度</strong>是 <span class="arithmatex">\(2^k\)</span>，那么：</p>
+<div class="arithmatex">\[
 \operatorname{rev}(i)=\left\lfloor\frac{\operatorname{rev}(\lfloor\frac{i}{2}\rfloor)}{2}\right\rfloor+(i\bmod 2)\times 2^{k-1}
 \nonumber
-$$
-接下来考虑怎么合并答案。</p>
+\]</div>
+<p>接下来考虑怎么合并答案。</p>
 <p>现在假设我们已经有了 <span class="arithmatex">\(F_e(\omega_{n/2}^{k})\)</span> 和 <span class="arithmatex">\(F_o(\omega^{k}_{n/2})\)</span> 的答案，那么他们分别存在数组里 <span class="arithmatex">\(k\)</span> 与 <span class="arithmatex">\(k+\frac{n}{2}\)</span> 的位置，而我们借助这两个值算出来的 <span class="arithmatex">\(F(\omega_n^{k})\)</span> 与 <span class="arithmatex">\(F(\omega^{k+\frac{n}{2}}_n)\)</span> 恰好放在同样的位置，直接覆盖即可。</p>
 <p>具体实现可以看代码：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">max</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">ceil</span><span class="p">(</span><span class="n">log2</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="n">m</span><span class="p">)),</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
@@ -3620,36 +3710,36 @@ $$
 <p>上面的每次按奇偶划分的做法被称为DIT(按时域抽取)-FFT，其作用可以概括为<strong>输入一个经过蝴蝶变换后的系数向量，输出一个点值向量</strong></p>
 <p>而DIF(按频域抽取)-FFT是其转置，作用是<strong>输入一个系数向量，输出一个蝴蝶变换后的点值向量</strong></p>
 <p>太抽象了，先不管这玩意是啥意思，我们考虑换一个角度做 FFT，现在我们已经知道 FFT 的取值都是单位根了，我们从单位根下手：</p>
-<p>假设我们要求 <span class="arithmatex">\(F(\omega_n^k)\)</span>
-$$
+<p>假设我们要求 <span class="arithmatex">\(F(\omega_n^k)\)</span></p>
+<div class="arithmatex">\[
 \begin{aligned}
 F(\omega_n^{k})
-&amp;=\sum_{i=0}^{n-1}a_i\omega_n^{ki}\
-&amp;=\sum_{i=0}^{\frac{n}{2}-1}a_i\omega_n^{ki}+\sum_{i=\frac{n}{2}}^{n-1}a_i\omega_n^{ki}\
-&amp;=\sum_{i=0}^{\frac{n}{2}-1}a_i\omega_n^{ki}+\sum_{i=0}^{\frac{n}{2}-1}a_{i+\frac{n}{2}}\omega_n^{k(\frac{n}{2}+i)}\
-&amp;=\sum_{i=0}^{\frac{n}{2}-1}a_i\omega_n^{ki}+\sum_{i=0}^{\frac{n}{2}-1}a_{i+\frac{n}{2}}\omega_n^{\frac{kn}{2}+ki}\
-&amp;=\sum_{i=0}^{\frac{n}{2}-1}a_i\omega_n^{ki}+\sum_{i=0}^{\frac{n}{2}-1}a_{i+\frac{n}{2}}\omega_n^{\frac{kn}{2}+ki}\
-&amp;=\sum_{i=0}^{\frac{n}{2}-1}\bigg(a_i+a_{i+\frac{n}{2}}\omega_n^{\frac{kn}{2}}\bigg)\omega_n^{ki}\
-&amp;=\sum_{i=0}^{\frac{n}{2}-1}\bigg(a_i+(-1)^ka_{i+\frac{n}{2}}\bigg)\omega_n^{ki}\
+&amp;=\sum_{i=0}^{n-1}a_i\omega_n^{ki}\\
+&amp;=\sum_{i=0}^{\frac{n}{2}-1}a_i\omega_n^{ki}+\sum_{i=\frac{n}{2}}^{n-1}a_i\omega_n^{ki}\\
+&amp;=\sum_{i=0}^{\frac{n}{2}-1}a_i\omega_n^{ki}+\sum_{i=0}^{\frac{n}{2}-1}a_{i+\frac{n}{2}}\omega_n^{k(\frac{n}{2}+i)}\\
+&amp;=\sum_{i=0}^{\frac{n}{2}-1}a_i\omega_n^{ki}+\sum_{i=0}^{\frac{n}{2}-1}a_{i+\frac{n}{2}}\omega_n^{\frac{kn}{2}+ki}\\
+&amp;=\sum_{i=0}^{\frac{n}{2}-1}a_i\omega_n^{ki}+\sum_{i=0}^{\frac{n}{2}-1}a_{i+\frac{n}{2}}\omega_n^{\frac{kn}{2}+ki}\\
+&amp;=\sum_{i=0}^{\frac{n}{2}-1}\bigg(a_i+a_{i+\frac{n}{2}}\omega_n^{\frac{kn}{2}}\bigg)\omega_n^{ki}\\
+&amp;=\sum_{i=0}^{\frac{n}{2}-1}\bigg(a_i+(-1)^ka_{i+\frac{n}{2}}\bigg)\omega_n^{ki}\\
 &amp;=\sum_{i=0}^{\frac{n}{2}-1}a_i\omega^{ki}+\sum_{i=0}^{\frac{n}{2}-1}(-1)^ka_{i+\frac{n}{2}}\omega_n^{ki}
 \end{aligned}
 \nonumber
-$$</p>
-<p>按 <span class="arithmatex">\(k\)</span> 的奇偶性分类讨论，如果我们的 <span class="arithmatex">\(k\)</span> 是一个偶数，那么
-$$
+\]</div>
+<p>按 <span class="arithmatex">\(k\)</span> 的奇偶性分类讨论，如果我们的 <span class="arithmatex">\(k\)</span> 是一个偶数，那么</p>
+<div class="arithmatex">\[
 F(\omega_n^{k})=(\sum_{i=0}^{\frac{n}{2}-1}a_i+\sum_{i=0}^{\frac{n}{2}-1}a_{i+\frac{n}{2}})\omega_n^{ki}
 \nonumber
-$$
-如果我们的 <span class="arithmatex">\(k\)</span> 是一个奇数，那
-$$
+\]</div>
+<p>如果我们的 <span class="arithmatex">\(k\)</span> 是一个奇数，那</p>
+<div class="arithmatex">\[
 F(\omega_n^k)=(\sum_{i=0}^{\frac{n}{2}-1}a_i-\sum_{i=0}^{\frac{n}{2}-1}a_{i+\frac{n}{2}})\omega_n^{ki}
 \nonumber
-$$
-这样似乎还是要对每个点求一次单位根，是 <span class="arithmatex">\(\mathcal O(n^2)\)</span> 的，但是不要忘记单位根的性质
-$$
+\]</div>
+<p>这样似乎还是要对每个点求一次单位根，是 <span class="arithmatex">\(\mathcal O(n^2)\)</span> 的，但是不要忘记单位根的性质</p>
+<div class="arithmatex">\[
 (\omega_n^{k})^2=(\omega_{n/2}^{k})
-$$
-对于所有偶数的 <span class="arithmatex">\(k\)</span>，都写成 <span class="arithmatex">\(\omega_{n}^{2p}\)</span> 的形式，也就是 <span class="arithmatex">\(\omega_{n/2}^{p}\)</span>，这也就是说，我们把奇数的位置全部乘上 <span class="arithmatex">\(\omega^{1}_{n}\)</span>，再把奇数和偶数的部分提取出来，分别递归进行 DIF，那么在第二层乘上 <span class="arithmatex">\(\omega^{1}_{n/2}\)</span> 实际上就是在第一层乘上了 <span class="arithmatex">\(\omega^{2}_n\)</span>。考虑幂次上的二进制拆分，所以这个是对的。</p>
+\]</div>
+<p>对于所有偶数的 <span class="arithmatex">\(k\)</span>，都写成 <span class="arithmatex">\(\omega_{n}^{2p}\)</span> 的形式，也就是 <span class="arithmatex">\(\omega_{n/2}^{p}\)</span>，这也就是说，我们把奇数的位置全部乘上 <span class="arithmatex">\(\omega^{1}_{n}\)</span>，再把奇数和偶数的部分提取出来，分别递归进行 DIF，那么在第二层乘上 <span class="arithmatex">\(\omega^{1}_{n/2}\)</span> 实际上就是在第一层乘上了 <span class="arithmatex">\(\omega^{2}_n\)</span>。考虑幂次上的二进制拆分，所以这个是对的。</p>
 <p>这里的做法其实是考虑每一个系数会乘上哪些单位根，而 <strong>DIT-FFT</strong> 实际上是考虑每一个单位根会乘上哪些系数。</p>
 <p>最后实际上把所有 <span class="arithmatex">\(F(\omega_n^{k})\)</span> 按 <span class="arithmatex">\(k\)</span> 蝴蝶变换了一遍，所以就是<strong>输入一个系数向量，输出一个蝴蝶变换后的点值向量</strong></p>
 <p>我们有一份非常暴力的实现：</p>
