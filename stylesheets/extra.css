@@ -1,0 +1,18 @@
+@font-face {
+	font-family: "Cascadia Mono";
+	src: url("CascadiaMono.ttf");
+	font-size: 16px;
+}
+@font-face {
+	font-family: "LXGW GB";
+	src: url("LXGWWenKaiGB_Regular.ttf");
+}
+@font-face {
+	font-family: "LXGW WenKai";
+	src: url("LXGWWenKaiRegular.ttf");
+	font-size: 16px;
+}
+:root {
+	--md-code-font: "Cascadia Mono";
+	--md-text-font: "LXGW WenKai";
+}
