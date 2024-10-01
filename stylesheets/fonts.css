@@ -10,7 +10,7 @@
 @font-face {
 	font-family: "LXGW WenKai";
 	src: url("../fonts/LXGWWenKaiRegular.ttf");
-	font-size: 16px;
+	font-size: 20px;
 }
 :root {
 	--md-code-font: "Cascadia Mono";

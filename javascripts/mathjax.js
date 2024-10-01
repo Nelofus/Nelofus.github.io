@@ -12,7 +12,7 @@ window.MathJax = {
   loader: {load: ['[tex]/color']},
   tex: {packages: {'[+]': ['color']}},
   loader: {load: ['[tex]/physics']},
-  tex: {packages: {'[+]': ['physics']}}
+  tex: {packages: {'[+]': ['physics']}},
 };
 
 document$.subscribe(() => { 
