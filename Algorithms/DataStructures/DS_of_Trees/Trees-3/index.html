@@ -1208,6 +1208,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Strings/EX_exercise.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    练习
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3879,6 +3900,7 @@
 <li>簇的上界点为整个簇中深度最小的点。</li>
 <li>Compress 树的中序遍历是按照深度升序遍历。</li>
 </ul>
+<p>可以证明，树高经过两步之后必定翻倍。树高至多为 <span class="arithmatex">\(2\lfloor\times \log n\rfloor\)</span>。</p>
 <h3 id="_1">建树的实现<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <p>首先我们有 <code>Cluster</code> 这个类，表示一个簇的信息，其中 <code>u</code> 是上界点，<code>v</code> 是下界点。同时有 <code>Rake</code> 和 <code>Compress</code> 两个基本的操作。</p>
 <p>首先定义 <code>node</code> 类</p>
