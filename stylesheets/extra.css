@@ -1,20 +1,20 @@
 @font-face {
 	font-family: "Cascadia Mono";
-	src: url("/fonts/CascadiaMono.ttf");
+	src: url("../fonts/CascadiaMono.ttf");
 	font-size: 16px;
 }
 @font-face {
 	font-family: "LXGW GB";
-	src: url("/fonts/LXGWWenKaiGB_Regular.ttf");
+	src: url("../fonts/LXGWWenKaiGB_Regular.ttf");
 }
 @font-face {
 	font-family: "LXGW WenKai";
-	src: url("/fonts/LXGWWenKaiRegular.ttf");
+	src: url("../fonts/LXGWWenKaiRegular.ttf");
 	font-size: 16px;
 }
 @font-face {
     font-family: "LXGW Bright";
-    src: url("/fonts/LXGWBright-Regular.ttf");
+    src: url("../fonts/LXGWBright-Regular.ttf");
 	font-size: 18px;
 }
 :root {
