@@ -4197,7 +4197,13 @@
 <p>首先 <span class="arithmatex">\([2^k,n)\)</span> 的部分我们已经完成了，因为 <span class="arithmatex">\(\frac{|S|}{2}\le 2^k\)</span>。</p>
 <p>那么接下来就是对任意一个 <span class="arithmatex">\(x&lt;k\)</span>，都有长度在 <span class="arithmatex">\([2^x,2^{x+1})\)</span> 的 <span class="arithmatex">\(\bd\)</span> 长度构成一个等差数列。</p>
 <p>不妨设其中长度最大的 <span class="arithmatex">\(\bd\)</span> 长度为 <span class="arithmatex">\(l\)</span>，则所有原串中长度 <span class="arithmatex">\(&lt;2^{x+1}\)</span> 的 <span class="arithmatex">\(\bd\)</span> 要么是这个最大的 <span class="arithmatex">\(\bd\)</span>，要么是这个最大 <span class="arithmatex">\(\bd\)</span> 的 <span class="arithmatex">\(\bd\)</span>。</p>
-<p>对这个长度为 <span class="arithmatex">\(l\)</span> 的 <span class="arithmatex">\(\bd\)</span> 施用引理，所有长度在 <span class="arithmatex">\([\frac{l}{2},l)\)</span> 的 <span class="arithmatex">\(\bd\)</span> 长度又构成一个等差数列，根据引理，长度的公差为最长 <span class="arithmatex">\(\bd\)</span> 的周期，所以 <span class="arithmatex">\(l\)</span> 也在这个等差数列里。因为 <span class="arithmatex">\(\frac{l}{2}\le 2^x\)</span>，所以长度在 <span class="arithmatex">\([2^x,2^{x+1}]\)</span> 之间的 <span class="arithmatex">\(\bd\)</span> 又构成一个等差数列。</p>
+<p>对这个长度为 <span class="arithmatex">\(l\)</span> 的 <span class="arithmatex">\(\bd\)</span> 施用引理，所有长度在 <span class="arithmatex">\([\frac{l}{2},l)\)</span> 的 <span class="arithmatex">\(\bd\)</span> 长度又构成一个等差数列，根据引理，长度的公差为最长 <span class="arithmatex">\(\bd\)</span> 的周期，所以 <span class="arithmatex">\(l\)</span> 可以放在这个等差数列的末尾。因为 <span class="arithmatex">\(\frac{l}{2}\le 2^x\)</span>，所以长度在 <span class="arithmatex">\([2^x,2^{x+1}]\)</span> 之间的 <span class="arithmatex">\(\bd\)</span> 又构成一个等差数列。</p>
+<p>还有一个性质：</p>
+<blockquote>
+<p>性质 3:</p>
+<p>对于字符串 <span class="arithmatex">\(S\)</span>，其公差 <span class="arithmatex">\(\ge d\)</span> 的 <span class="arithmatex">\(\bd\)</span> 等差序列总长是 <span class="arithmatex">\(\mathcal O\qty(\frac{|S|}{d})\)</span>。</p>
+</blockquote>
+<p>证明不会。</p>
 
 
 
