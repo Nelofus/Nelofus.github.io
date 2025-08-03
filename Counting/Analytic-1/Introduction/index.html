@@ -11,21 +11,25 @@
       
       
       
+        <link rel="prev" href="../../Musings/Revisiting-PIE/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+        <link rel="next" href="../Symmetry/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>DP 2 - Heratino's spell codex</title>
+        <title>1.【理论】生成函数的引入 - Heratino's spell codex</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -85,16 +89,16 @@
       
     
     
-      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -103,7 +107,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -122,7 +126,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#wqs" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -138,7 +142,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../../.." title="Heratino&#39;s spell codex" class="md-header__button md-logo" aria-label="Heratino's spell codex" data-md-component="logo">
+    <a href="../../.." title="Heratino&#39;s spell codex" class="md-header__button md-logo" aria-label="Heratino's spell codex" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -158,7 +162,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DP 2
+              1.【理论】生成函数的引入
             
           </span>
         </div>
@@ -263,7 +267,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -280,11 +284,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../Counting/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -304,7 +310,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Musings/" class="md-tabs__link">
+        <a href="../../../Musings/" class="md-tabs__link">
           
   
   
@@ -344,7 +350,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="Heratino&#39;s spell codex" class="md-nav__button md-logo" aria-label="Heratino's spell codex" data-md-component="logo">
+    <a href="../../.." title="Heratino&#39;s spell codex" class="md-nav__button md-logo" aria-label="Heratino's spell codex" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -374,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -393,24 +399,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -423,7 +434,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             组合计数
@@ -437,7 +448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Counting/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -501,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Counting/Musings/Revisiting-PIE/" class="md-nav__link">
+      <a href="../../Musings/Revisiting-PIE/" class="md-nav__link">
         
   
   
@@ -529,6 +540,8 @@
                 
   
   
+    
+  
   
   
     
@@ -539,11 +552,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -559,7 +572,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             基础生成函数理论
@@ -570,10 +583,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../Counting/Analytic-1/Introduction/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    1.【理论】生成函数的引入
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -584,6 +617,66 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      生成函数的引入
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      生成函数与常系数齐次线性递推
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="生成函数与常系数齐次线性递推">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      斐波那契数列
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      更一般的情形？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -596,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Counting/Analytic-1/Symmetry/" class="md-nav__link">
+      <a href="../Symmetry/" class="md-nav__link">
         
   
   
@@ -675,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Musings/" class="md-nav__link">
+      <a href="../../../Musings/" class="md-nav__link">
         
   
   
@@ -723,29 +816,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#wqs" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      WQS 二分
+      生成函数的引入
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#minkowski" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Minkowski 和
+      生成函数与常系数齐次线性递推
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="生成函数与常系数齐次线性递推">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      斐波那契数列
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#slope-trick" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      Slope Trick
+      更一般的情形？
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -768,11 +876,139 @@
   
 
 
-  <h1>DP 2</h1>
+  <h1>1.【理论】生成函数的引入</h1>
 
-<h2 id="wqs">WQS 二分<a class="headerlink" href="#wqs" title="Permanent link">&para;</a></h2>
-<h2 id="minkowski">Minkowski 和<a class="headerlink" href="#minkowski" title="Permanent link">&para;</a></h2>
-<h2 id="slope-trick">Slope Trick<a class="headerlink" href="#slope-trick" title="Permanent link">&para;</a></h2>
+<div class="arithmatex">\[
+\rm{Define\ \LaTeX \ Macros\ Here}
+\newcommand\stirA[2]{\begin{bmatrix}#1\\ #2\end{bmatrix}}
+\newcommand\stirB[2]{\begin{Bmatrix}#1\\ #2\end{Bmatrix}}
+\newcommand\ul[1]{\underline{#1}}
+\newcommand\dis{\operatorname{dis}}
+\newcommand\edp{\operatorname{edp}}
+\newcommand\Endpos{\operatorname{Endpos}}
+\newcommand\Startpos{\operatorname{Startpos}}
+\newcommand\height{\operatorname{height}}
+\newcommand\SA{\operatorname{SA}}
+\newcommand\len{\operatorname{len}}
+\newcommand\chkmax{\operatorname{chkmax}}
+\newcommand\chkmin{\operatorname{chkmin}}
+\newcommand\siz{\operatorname{siz}}
+\newcommand\fa{\operatorname{fa}}
+\newcommand\LCP{\operatorname{LCP}}
+\newcommand\EGF{\operatorname{EGF}}
+\newcommand\OGF{\operatorname{OGF}}
+\newcommand\bd{\operatorname{Border}}
+\newcommand\mbd{\operatorname{MaxBorder}}
+\]</div>
+<blockquote>
+<p>"A generating function is a device somewhat similar to a bag. Instead of carrying many little objects detachedly, which could be embarrassing, we put them all in a bag, and then we have only one object to carry, the bag."</p>
+<p>— George Pólya， <em>Mathematics and Plausible Reasoning</em> (1954)</p>
+</blockquote>
+<p>理论上，阅读本系列文章并不需要什么前置知识，遇到不会的再去查就够用了。但我仍然建议您最好掌握一些基础的微积分知识，和一些基础的组合计数手法。</p>
+<p>本系列内容大量抄袭自如下资料：</p>
+<ol>
+<li>command_block 老师的<a href="https://www.luogu.com.cn/article/oy8l7j3n">多项式计数杂谈</a>。</li>
+</ol>
+<p>我们会先略去各种在实际应用中不甚重要的基础证明，将一些运算法则当成公理来用，待到系列结束，我们会对所有不加证明地给出的结论作完整的证明。</p>
+<h2 id="_1">生成函数的引入<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>正如 Pólya 所言，使用生成函数处理问题的一个基本思想就是试着将整个序列打包成一个整体，这个整体包含了序列的全部信息，那么接下来的处理中就只用考虑这个整体，而不是考虑数列的每一项。</p>
+<p>那么该如何执行这个打包的过程？Euler 给出了一个办法，我们定义序列 <span class="arithmatex">\(\{a_n\}\)</span> 的 OGF(Ordinary Generating Function， 普通生成函数) 为</p>
+<div class="arithmatex">\[
+A(x)=\sum_{i=0}^{\infty}a_ix^i
+\]</div>
+<p>其中，<span class="arithmatex">\(x\)</span> 是用来区分数列各项的<strong>形式变元</strong>。记 <span class="arithmatex">\([x^n]A(x)=a_n\)</span>，即 <span class="arithmatex">\(A(x)\)</span> 的 <span class="arithmatex">\(n\)</span> 次项系数。</p>
+<p>这看起来只是换了一种方法写出我们的序列，这比起原先的方法有什么优越性？让我们先来尝试一个最简单的例子，即满足 <span class="arithmatex">\(f_n=1\)</span> 的数列 <span class="arithmatex">\(\{f_n\}\)</span>。它的生成函数 <span class="arithmatex">\(F(x)\)</span> 为：</p>
+<div class="arithmatex">\[
+F(x)=\sum_{i=0}^{\infty}x^i
+\]</div>
+<p>要研究一个涉及无穷的结构，一种常用的方法是将其自我表示，我们有：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+F(x)&amp;=1+x+x^2+x^3+x^4+x^5+\cdots\\
+xF(x)&amp;=\hspace{1.75em}x+x^2+x^3+x^4+x^5+\cdots
+\end{aligned}
+\]</div>
+<p>所以有</p>
+<div class="arithmatex">\[
+1+xF(x)=F(x)\Longrightarrow F(x)=\frac{1}{1-x}
+\]</div>
+<p>我们把右式这样<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>的形式叫做<strong>封闭形式</strong>。</p>
+<p>学过数学分析的朋友们会指出，我们刚刚操作无穷的过程过于轻率：如果 <span class="arithmatex">\(|x|\ge 1\)</span>，那么 <span class="arithmatex">\(F(x)\)</span> 不收敛，对两个无穷大加减是没有意义的。</p>
+<p>这样的求和成立的原因是，<span class="arithmatex">\(x\)</span> 在此处仅作<strong>形式变元</strong>，你可以把它看作是一个<strong>占位符</strong>，它存在的意义只是区分数列的各项，不会是任何的数（这就是它被称为<strong>形式</strong>的原因）。所以，我们不在乎它的敛散性，也不在乎它的取值，可以假定求和总是收敛。我们称这样 <span class="arithmatex">\(x\)</span> 作为形式变元的幂级数是<strong>形式幂级数</strong>。</p>
+<p>不加证明地，我们说生成函数的加，减，乘分别对应序列的如下变换：</p>
+<ol>
+<li><span class="arithmatex">\(C(x)=A(x)\pm B(x)\iff [x^n]C(x)=[x^n]A(x)\pm [x^n]B(x)\)</span></li>
+<li><span class="arithmatex">\(\displaystyle C(x)=A(x)B(x)\iff [x^n]C(x)=\sum_{i=0}^{n}[x^{n-i}]A(x)[x^i]B(x)\)</span></li>
+</ol>
+<p>也就是说，对他们的封闭形式作前者的运算，就等于对它们的展开式作后者的变换。</p>
+<h2 id="_2">生成函数与常系数齐次线性递推<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">斐波那契数列<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>上面只是讲了一些抽象的废话，接下来，我们试着用生成函数来解决一些简单的问题：求斐波那契数列<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> <span class="arithmatex">\(\{f_n\}\)</span> 的通项公式。</p>
+<p>先试着像上面一样表示出 <span class="arithmatex">\(\{f_n\}\)</span> 的生成函数 <span class="arithmatex">\(F(x)\)</span>，我们有：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+F(x)&amp;=f_0+f_1x^1+f_2x^2+f_3x^3+\cdots\\
+xF(x)&amp;=\hspace{2.2em}f_0x^1+f_1x^2+f_2x^3+\cdots\\
+x^2F(x)&amp;=\hspace{5.4em}f_0x^2+f_1x^3+\cdots
+\end{aligned}
+\]</div>
+<p>如此比对系数后我们可以发现，有</p>
+<div class="arithmatex">\[
+x+xF(x)+x^2F(x)=F(x)\iff F(x)=\frac{x}{1-x-x^2}
+\]</div>
+<p>我们尽量往之前的例子 <span class="arithmatex">\(\frac{1}{1-x}\)</span> 的形式上凑，即分子是个常数，分母是个一次式。</p>
+<p>我们断言 <span class="arithmatex">\(\frac{x}{1-x-x^2}\)</span> 能被写成这样的两个分式之和，即：</p>
+<div class="arithmatex">\[
+\frac{x}{1-x-x^2}=\frac{-x}{x^2+x-1}=\frac{a}{x-\alpha}+\frac{b}{x-\beta}
+\]</div>
+<p>接下来，我们把这些参数一一求出，首先肯定有 <span class="arithmatex">\(\alpha，\beta\)</span> 是 <span class="arithmatex">\(x^2+x-1\)</span> 的两根，解得 <span class="arithmatex">\(\alpha=\frac{-1-\sqrt 5}{2}，\beta=\frac{-1+\sqrt 5}{2}\)</span>。</p>
+<p>又知道 <span class="arithmatex">\(a(x-\beta)+b(x-\alpha)=-x\)</span>，比对系数有 <span class="arithmatex">\(a+b=-1\land a\beta +b\alpha =0\)</span>，解得 <span class="arithmatex">\(a=\frac{-5-\sqrt 5}{10}，b=\frac{-5+\sqrt 5}{10}\)</span>。</p>
+<p>如此，四个常数均已知，由一开始的方法，我们知道 <span class="arithmatex">\(\displaystyle \frac{1}{1-qx}=\sum_{i=0}^{\infty}q^ix^i\)</span>。从而：</p>
+<div class="arithmatex">\[
+\frac{a}{x-\alpha}+\frac{b}{x-\beta}=\frac{-\frac{a}{\alpha}}{1-\frac{1}{\alpha}x}+\frac{-\frac{b}{\beta}}{1-\frac{1}{\beta}x}=-\frac{a}{\alpha}\sum_{i=0}^{\infty}\frac{1}{\alpha^i}x^i-\frac{b}{\beta}\sum_{i=0}^{\infty}\frac{1}{\beta^i}x^i
+\]</div>
+<p>提取其第 <span class="arithmatex">\(n\)</span> 次项并整理：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\phantom{-}[x^n]\frac{1}{1-x-x^2}&amp;=-\qty(\frac{a}{\alpha^{n+1}}+\frac{b}{\beta^{n+1}})\\
+&amp;=-\qty(\dfrac{\frac{-5-\sqrt 5}{10}}{\qty(\frac{-1-\sqrt 5}{2})^{n+1}}+\dfrac{\frac{-5+\sqrt 5}{10}}{\qty(\frac{-1+\sqrt 5}{2})^{n+1}})\\
+&amp;=-\frac{1}{\sqrt 5}\qty(\dfrac{1}{\qty(\frac{-1-\sqrt 5}{2})^{n}}-\dfrac{1}{\qty(\frac{-1+\sqrt 5}{2})^{n}})\\
+&amp;=-\frac{1}{\sqrt 5}\qty(\dfrac{2^n}{\qty(-1-\sqrt 5)^{n}}-\dfrac{2^n}{\qty(-1+\sqrt 5)^{n}})\\
+&amp;=\frac{1}{\sqrt 5}\qty(\qty(\dfrac{\sqrt 5+1}{2})^n-\qty(\dfrac{-\sqrt 5 +1}{2})^n)&amp;\text{Rationalizing the denominator}
+\end{aligned}
+\]</div>
+<p>于是，我们得到了斐波那契数列的通项公式：</p>
+<div class="arithmatex">\[
+f_n=\frac{1}{\sqrt 5}\qty(\qty(\dfrac{\sqrt 5+1}{2})^n-\qty(\dfrac{-\sqrt 5 +1}{2})^n)
+\]</div>
+<h3 id="_4">更一般的情形？<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>假设有序列 <span class="arithmatex">\(\{f_n\}\)</span>，给出其 <span class="arithmatex">\(0\sim m-1\)</span> 项，再给出一个常数序列 <span class="arithmatex">\(\langle a_1,a_2,\cdots, a_m\rangle\)</span>，对于 <span class="arithmatex">\(k\ge m\)</span> 有：</p>
+<div class="arithmatex">\[
+f_k=\sum_{i=1}^{m}f_{k-i}a_i
+\]</div>
+<p>这样的递推，我们称之为<strong>常系数齐次线性递推</strong>，我们试着为它构造一个生成函数。</p>
+<p>仍然试着做上面类似的尝试，称其生成函数为 <span class="arithmatex">\(F(x)\)</span>，构造一个 <span class="arithmatex">\(m\)</span> 次多项式 <span class="arithmatex">\(Q\)</span>，使其有 <span class="arithmatex">\([x^0]Q(x)=-1,[x^k]Q(x)=a_k(0&lt;k\le m)\)</span>。</p>
+<p>容易知道 <span class="arithmatex">\([x^k]F(x)Q(x)\)</span> 在 <span class="arithmatex">\(k\ge m\)</span> 的情况下为 <span class="arithmatex">\(0\)</span>，而 <span class="arithmatex">\(F(x)\)</span> 的 <span class="arithmatex">\(&lt;m\)</span> 次项已知，<span class="arithmatex">\(Q(x)\)</span> 的 <span class="arithmatex">\(\le m\)</span> 次项已知，我们可以构造出 <span class="arithmatex">\(P(x)\)</span> 为</p>
+<div class="arithmatex">\[
+P(x)=F(x)Q(x)\pmod {x^m}
+\]</div>
+<p>其中一个形式幂级数 <span class="arithmatex">\(G(x)\)</span> 对 <span class="arithmatex">\(x^k\)</span> 取模的意义为，将其 <span class="arithmatex">\(\ge k\)</span> 次幂的系数设置为 <span class="arithmatex">\(0\)</span>。</p>
+<p>这样就有：</p>
+<div class="arithmatex">\[
+F(x)Q(x)-P(x)=0\iff F(x)=\frac{P(x)}{Q(x)}
+\]</div>
+<p>我们还不会对这个式子进行进一步的处理，暂时到此为止吧。</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>由常数，变量，基本函数的有限次四则运算/乘方/函数复合得来的式子&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><span class="arithmatex">\(f_0=0，f_1=1， f_{n}=f_{n-1}+f_{n-2}(n\ge 2)\)</span>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
@@ -827,12 +1063,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
       
-        <script src="../../../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
